@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a351e0af09cedb8c34c3cc7d38ce43e4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a351e0af09cedb8c34c3cc7d38ce43e4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a351e0af09cedb8c34c3cc7d38ce43e4 = L.map(
+                "map_a351e0af09cedb8c34c3cc7d38ce43e4",
+                {
+                    center: [25.0497673, 121.5771427],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ef5fa132de0bd027f488cc356dbdfc08 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ef5fa132de0bd027f488cc356dbdfc08.addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var marker_0a6ab5a9c511dae394eb23f7de820449 = L.marker(
+                [25.0497673, 121.5771427],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_038649531a4c767a7000803299d630ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a6ab5a9c511dae394eb23f7de820449.setIcon(icon_038649531a4c767a7000803299d630ab);
+        
+    
+        var popup_35c4633d7ed7bbd8468ebd0724c23170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79dc6b4c6530973e8dad7be5f69bba9c = $(`<div id="html_79dc6b4c6530973e8dad7be5f69bba9c" style="width: 100.0%; height: 100.0%;">User Location</div>`)[0];
+                popup_35c4633d7ed7bbd8468ebd0724c23170.setContent(html_79dc6b4c6530973e8dad7be5f69bba9c);
+            
+        
+
+        marker_0a6ab5a9c511dae394eb23f7de820449.bindPopup(popup_35c4633d7ed7bbd8468ebd0724c23170)
+        ;
+
+        
+    
+    
+            var marker_f98ca20fe41f22aa04aa3bf1c5a83478 = L.marker(
+                [25.02, 121.53],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_a4101cc7a51b9ed97d7a32b0263fba75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f98ca20fe41f22aa04aa3bf1c5a83478.setIcon(icon_a4101cc7a51b9ed97d7a32b0263fba75);
+        
+    
+        var popup_563a601b8898e7430063f5bc3996dc31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ff64e2721372b679d8b0e879e2af278 = $(`<div id="html_8ff64e2721372b679d8b0e879e2af278" style="width: 100.0%; height: 100.0%;">大安區1站</div>`)[0];
+                popup_563a601b8898e7430063f5bc3996dc31.setContent(html_8ff64e2721372b679d8b0e879e2af278);
+            
+        
+
+        marker_f98ca20fe41f22aa04aa3bf1c5a83478.bindPopup(popup_563a601b8898e7430063f5bc3996dc31)
+        ;
+
+        
+    
+    
+            var marker_e0246126369ee30e3d24e6ca0f2bc899 = L.marker(
+                [25.02, 121.53],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_2b2b8af1846546b718115b69cdc397c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0246126369ee30e3d24e6ca0f2bc899.setIcon(icon_2b2b8af1846546b718115b69cdc397c2);
+        
+    
+        var popup_f27140e1478bda5e3d352293718a9d8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48ff3957134c4bb6d144687c9c546e96 = $(`<div id="html_48ff3957134c4bb6d144687c9c546e96" style="width: 100.0%; height: 100.0%;">大安區2站</div>`)[0];
+                popup_f27140e1478bda5e3d352293718a9d8c.setContent(html_48ff3957134c4bb6d144687c9c546e96);
+            
+        
+
+        marker_e0246126369ee30e3d24e6ca0f2bc899.bindPopup(popup_f27140e1478bda5e3d352293718a9d8c)
+        ;
+
+        
+    
+    
+            var marker_f49f3f441cf9332575bb22647956cd60 = L.marker(
+                [25.03, 121.54],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_b8128dc4f996e10a5fe17dd047d8d459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f49f3f441cf9332575bb22647956cd60.setIcon(icon_b8128dc4f996e10a5fe17dd047d8d459);
+        
+    
+        var popup_710f8a5f2b962b0272fe914b4102bc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57ea6ad80d78c03d4ca0c4d0457fe19b = $(`<div id="html_57ea6ad80d78c03d4ca0c4d0457fe19b" style="width: 100.0%; height: 100.0%;">大安區3站</div>`)[0];
+                popup_710f8a5f2b962b0272fe914b4102bc61.setContent(html_57ea6ad80d78c03d4ca0c4d0457fe19b);
+            
+        
+
+        marker_f49f3f441cf9332575bb22647956cd60.bindPopup(popup_710f8a5f2b962b0272fe914b4102bc61)
+        ;
+
+        
+    
+    
+            var marker_6908806f5924833277f4eaab6adacda6 = L.marker(
+                [25.01, 121.54],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_928567a42f602b498bfd068e849afb8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6908806f5924833277f4eaab6adacda6.setIcon(icon_928567a42f602b498bfd068e849afb8f);
+        
+    
+        var popup_f809d35872efb23a6618f974013785fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40024831c94e1005faff857403c9e001 = $(`<div id="html_40024831c94e1005faff857403c9e001" style="width: 100.0%; height: 100.0%;">大安區4站</div>`)[0];
+                popup_f809d35872efb23a6618f974013785fd.setContent(html_40024831c94e1005faff857403c9e001);
+            
+        
+
+        marker_6908806f5924833277f4eaab6adacda6.bindPopup(popup_f809d35872efb23a6618f974013785fd)
+        ;
+
+        
+    
+    
+            var marker_b108b1c5260258439f3595a6f5bab9cd = L.marker(
+                [25.01, 121.54],
+                {}
+            ).addTo(map_a351e0af09cedb8c34c3cc7d38ce43e4);
+        
+    
+            var icon_25610b71f01322b88085420a8e17bdd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b108b1c5260258439f3595a6f5bab9cd.setIcon(icon_25610b71f01322b88085420a8e17bdd8);
+        
+    
+        var popup_c329fc2571ac82f60c707fb7445303f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3c493db7fcc88d585441aa9de3b748b = $(`<div id="html_f3c493db7fcc88d585441aa9de3b748b" style="width: 100.0%; height: 100.0%;">大安區5站</div>`)[0];
+                popup_c329fc2571ac82f60c707fb7445303f4.setContent(html_f3c493db7fcc88d585441aa9de3b748b);
+            
+        
+
+        marker_b108b1c5260258439f3595a6f5bab9cd.bindPopup(popup_c329fc2571ac82f60c707fb7445303f4)
+        ;
+
+        
+    
+</script>
+</html>
