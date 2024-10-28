@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e59b7a0529e64faa3c1dde2dfc357a33 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e59b7a0529e64faa3c1dde2dfc357a33" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e59b7a0529e64faa3c1dde2dfc357a33 = L.map(
+                "map_e59b7a0529e64faa3c1dde2dfc357a33",
+                {
+                    center: [25.034065, 121.56443975809691],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_02b6ff3e37e96be8edc2cc4f88759e66 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_02b6ff3e37e96be8edc2cc4f88759e66.addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var marker_b7579f7adbd0bc661c6176f3b0edee0f = L.marker(
+                [25.034065, 121.56443975809691],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_7dacb5414cb392d2535088cc068d9760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7579f7adbd0bc661c6176f3b0edee0f.setIcon(icon_7dacb5414cb392d2535088cc068d9760);
+        
+    
+        var popup_18bbbb10797337499540fe192f0dcd87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0946504a5f703b6d3d01eae57f4e362a = $(`<div id="html_0946504a5f703b6d3d01eae57f4e362a" style="width: 100.0%; height: 100.0%;">User Location</div>`)[0];
+                popup_18bbbb10797337499540fe192f0dcd87.setContent(html_0946504a5f703b6d3d01eae57f4e362a);
+            
+        
+
+        marker_b7579f7adbd0bc661c6176f3b0edee0f.bindPopup(popup_18bbbb10797337499540fe192f0dcd87)
+        ;
+
+        
+    
+    
+            var marker_da163eecf23dcc4be908e2c31a0b8cef = L.marker(
+                [25.04878, 121.5609],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_0f1a8183ffa7001fd2151c6f1f6cfee7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da163eecf23dcc4be908e2c31a0b8cef.setIcon(icon_0f1a8183ffa7001fd2151c6f1f6cfee7);
+        
+    
+        var popup_524573c4598a54fe7523c641f9bd423f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d7e6ea855114e73d982f28b2aad0d58 = $(`<div id="html_8d7e6ea855114e73d982f28b2aad0d58" style="width: 100.0%; height: 100.0%;">松山區4站</div>`)[0];
+                popup_524573c4598a54fe7523c641f9bd423f.setContent(html_8d7e6ea855114e73d982f28b2aad0d58);
+            
+        
+
+        marker_da163eecf23dcc4be908e2c31a0b8cef.bindPopup(popup_524573c4598a54fe7523c641f9bd423f)
+        ;
+
+        
+    
+    
+            var marker_3b92ac444698ba1f4ee63b3e54204a39 = L.marker(
+                [25.05136, 121.5628],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_96a6104ec244bd6a3ac6fd21315c7377 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b92ac444698ba1f4ee63b3e54204a39.setIcon(icon_96a6104ec244bd6a3ac6fd21315c7377);
+        
+    
+        var popup_b5712413d450c213d781141aa9082463 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36834f420c2c447cf52ab1359113749d = $(`<div id="html_36834f420c2c447cf52ab1359113749d" style="width: 100.0%; height: 100.0%;">松山區5站</div>`)[0];
+                popup_b5712413d450c213d781141aa9082463.setContent(html_36834f420c2c447cf52ab1359113749d);
+            
+        
+
+        marker_3b92ac444698ba1f4ee63b3e54204a39.bindPopup(popup_b5712413d450c213d781141aa9082463)
+        ;
+
+        
+    
+    
+            var marker_c122ef7fa88e4ded63e01abdd0dfc13f = L.marker(
+                [25.05009, 121.572],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_6a82fdb8204426e7f63e6bedac6a5859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c122ef7fa88e4ded63e01abdd0dfc13f.setIcon(icon_6a82fdb8204426e7f63e6bedac6a5859);
+        
+    
+        var popup_0dfeea6d83909abf7ed826269b5bb484 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5795b5d059f3163c40b9b7bf80998a5 = $(`<div id="html_c5795b5d059f3163c40b9b7bf80998a5" style="width: 100.0%; height: 100.0%;">松山區2站</div>`)[0];
+                popup_0dfeea6d83909abf7ed826269b5bb484.setContent(html_c5795b5d059f3163c40b9b7bf80998a5);
+            
+        
+
+        marker_c122ef7fa88e4ded63e01abdd0dfc13f.bindPopup(popup_0dfeea6d83909abf7ed826269b5bb484)
+        ;
+
+        
+    
+    
+            var marker_168a37f0b1bf5e12665093c06f969507 = L.marker(
+                [25.04987, 121.5779],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_f2315cd79efc4c2cc7af4fde2bd7be64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_168a37f0b1bf5e12665093c06f969507.setIcon(icon_f2315cd79efc4c2cc7af4fde2bd7be64);
+        
+    
+        var popup_19635184f517977ba5be764094bdcdbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60627d81bfa76ca2b23ac2779141fe9b = $(`<div id="html_60627d81bfa76ca2b23ac2779141fe9b" style="width: 100.0%; height: 100.0%;">松山區1站</div>`)[0];
+                popup_19635184f517977ba5be764094bdcdbf.setContent(html_60627d81bfa76ca2b23ac2779141fe9b);
+            
+        
+
+        marker_168a37f0b1bf5e12665093c06f969507.bindPopup(popup_19635184f517977ba5be764094bdcdbf)
+        ;
+
+        
+    
+    
+            var marker_dbca7c0187fb7e22781884c69050b454 = L.marker(
+                [25.02543, 121.5433],
+                {}
+            ).addTo(map_e59b7a0529e64faa3c1dde2dfc357a33);
+        
+    
+            var icon_5d4d01aaf72fdf9d7680e40c448a8e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbca7c0187fb7e22781884c69050b454.setIcon(icon_5d4d01aaf72fdf9d7680e40c448a8e37);
+        
+    
+        var popup_688d3d4837451a3b056b7c9e717a2d3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbb96888166850a09d165a3133eedc7d = $(`<div id="html_fbb96888166850a09d165a3133eedc7d" style="width: 100.0%; height: 100.0%;">大安區3站</div>`)[0];
+                popup_688d3d4837451a3b056b7c9e717a2d3a.setContent(html_fbb96888166850a09d165a3133eedc7d);
+            
+        
+
+        marker_dbca7c0187fb7e22781884c69050b454.bindPopup(popup_688d3d4837451a3b056b7c9e717a2d3a)
+        ;
+
+        
+    
+</script>
+</html>
