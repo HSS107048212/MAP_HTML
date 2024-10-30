@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85f1cf518e1c128374e384dcf7b7e0d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_85f1cf518e1c128374e384dcf7b7e0d9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_85f1cf518e1c128374e384dcf7b7e0d9 = L.map(
+                "map_85f1cf518e1c128374e384dcf7b7e0d9",
+                {
+                    center: [25.0462432, 121.5174745],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d0abffd0830dd39dcf29cc961342e9b0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d0abffd0830dd39dcf29cc961342e9b0.addTo(map_85f1cf518e1c128374e384dcf7b7e0d9);
+        
+    
+            var marker_bccbfa26af823a6295d23bfbcd56522d = L.marker(
+                [25.0462432, 121.5174745],
+                {}
+            ).addTo(map_85f1cf518e1c128374e384dcf7b7e0d9);
+        
+    
+            var icon_004f9ac31dd7d9ae6a7f6fcb0bf34603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bccbfa26af823a6295d23bfbcd56522d.setIcon(icon_004f9ac31dd7d9ae6a7f6fcb0bf34603);
+        
+    
+        var popup_17da0b75982b7944004b99564774e251 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_148967ada25257ee6f37af979f90d01f = $(`<div id="html_148967ada25257ee6f37af979f90d01f" style="width: 100.0%; height: 100.0%;">維修總部</div>`)[0];
+                popup_17da0b75982b7944004b99564774e251.setContent(html_148967ada25257ee6f37af979f90d01f);
+            
+        
+
+        marker_bccbfa26af823a6295d23bfbcd56522d.bindPopup(popup_17da0b75982b7944004b99564774e251)
+        ;
+
+        
+    
+    
+            var marker_b4b3bfb9d82a99ed59d9a8ca4f9e9668 = L.marker(
+                [25.045, 121.5197],
+                {}
+            ).addTo(map_85f1cf518e1c128374e384dcf7b7e0d9);
+        
+    
+            var icon_23009b23fff96a856b7e98e5ed121703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b4b3bfb9d82a99ed59d9a8ca4f9e9668.setIcon(icon_23009b23fff96a856b7e98e5ed121703);
+        
+    
+        var popup_f7f3e88ee4986220ace10001d5ac2592 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4390ae210f649ad8307347a0f2c9352c = $(`<div id="html_4390ae210f649ad8307347a0f2c9352c" style="width: 100.0%; height: 100.0%;">中山青島路口 - Available: 1.0</div>`)[0];
+                popup_f7f3e88ee4986220ace10001d5ac2592.setContent(html_4390ae210f649ad8307347a0f2c9352c);
+            
+        
+
+        marker_b4b3bfb9d82a99ed59d9a8ca4f9e9668.bindPopup(popup_f7f3e88ee4986220ace10001d5ac2592)
+        ;
+
+        
+    
+</script>
+</html>
