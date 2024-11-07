@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97e3545e573b0628ac5df098c40c3232 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_97e3545e573b0628ac5df098c40c3232" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_97e3545e573b0628ac5df098c40c3232 = L.map(
+                "map_97e3545e573b0628ac5df098c40c3232",
+                {
+                    center: [25.034065, 121.56443975809691],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd904dd93b67a581adaab2783d5f77c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dd904dd93b67a581adaab2783d5f77c7.addTo(map_97e3545e573b0628ac5df098c40c3232);
+        
+    
+            var marker_074d87ad92ab88c8ed43c65993593114 = L.marker(
+                [25.034065, 121.56443975809691],
+                {}
+            ).addTo(map_97e3545e573b0628ac5df098c40c3232);
+        
+    
+            var icon_033419489e5a3af9c449edba3be21b9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_074d87ad92ab88c8ed43c65993593114.setIcon(icon_033419489e5a3af9c449edba3be21b9e);
+        
+    
+        var popup_f3c5e3237e4118b5722f11d7e0ba9e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fa8dbc5f6b2c5a1c1dfabfab6fb197c = $(`<div id="html_3fa8dbc5f6b2c5a1c1dfabfab6fb197c" style="width: 100.0%; height: 100.0%;">維修總部</div>`)[0];
+                popup_f3c5e3237e4118b5722f11d7e0ba9e89.setContent(html_3fa8dbc5f6b2c5a1c1dfabfab6fb197c);
+            
+        
+
+        marker_074d87ad92ab88c8ed43c65993593114.bindPopup(popup_f3c5e3237e4118b5722f11d7e0ba9e89)
+        ;
+
+        
+    
+    
+            var marker_aab088ef0cccb3ab5d105eff79629e8f = L.marker(
+                [25.0281, 121.5567],
+                {}
+            ).addTo(map_97e3545e573b0628ac5df098c40c3232);
+        
+    
+            var icon_45c48c61cdfd3105561b8cedb9dd7635 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aab088ef0cccb3ab5d105eff79629e8f.setIcon(icon_45c48c61cdfd3105561b8cedb9dd7635);
+        
+    
+        var popup_7870b06f0bbf4d5aa794fad3351f8586 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc80d51ec948ec0fc63e1db9f89d680c = $(`<div id="html_fc80d51ec948ec0fc63e1db9f89d680c" style="width: 100.0%; height: 100.0%;">嘉興街175巷口 - 維修編碼: 1.0</div>`)[0];
+                popup_7870b06f0bbf4d5aa794fad3351f8586.setContent(html_fc80d51ec948ec0fc63e1db9f89d680c);
+            
+        
+
+        marker_aab088ef0cccb3ab5d105eff79629e8f.bindPopup(popup_7870b06f0bbf4d5aa794fad3351f8586)
+        ;
+
+        
+    
+    
+            var poly_line_e687815d5c35efb01f5c5bf4dc8bef71 = L.polyline(
+                [[25.033972, 121.563845], [25.033991, 121.56362], [25.034015, 121.563556], [25.034016, 121.56345], [25.033658, 121.563443], [25.033005, 121.563412], [25.033021, 121.562698], [25.03304, 121.561903], [25.033052, 121.561388], [25.033055, 121.561318], [25.032946, 121.561313], [25.032506, 121.561303], [25.032063, 121.561283], [25.031952, 121.561316], [25.031081, 121.561285], [25.030812, 121.56127], [25.030725, 121.56131], [25.029565, 121.562263], [25.029263, 121.561826], [25.029019, 121.56146], [25.028796, 121.561169], [25.028749, 121.561095], [25.028618, 121.560892], [25.028504, 121.560723], [25.028272, 121.560447], [25.028017, 121.560539], [25.027836, 121.56054], [25.027851, 121.559109], [25.027858, 121.558066], [25.027877, 121.558065], [25.027892, 121.557646], [25.027624, 121.557529], [25.027776, 121.557112], [25.028005, 121.556634], [25.028103, 121.556694]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_97e3545e573b0628ac5df098c40c3232);
+        
+</script>
+</html>
