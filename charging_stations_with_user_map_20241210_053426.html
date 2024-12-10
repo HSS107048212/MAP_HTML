@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c4f3394eadbb29dcfb141c00b7e6a00c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c4f3394eadbb29dcfb141c00b7e6a00c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c4f3394eadbb29dcfb141c00b7e6a00c = L.map(
+                "map_c4f3394eadbb29dcfb141c00b7e6a00c",
+                {
+                    center: [25.0265152, 121.534395],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46541ac17a869c08ba272d6d5e0a5a19 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_46541ac17a869c08ba272d6d5e0a5a19.addTo(map_c4f3394eadbb29dcfb141c00b7e6a00c);
+        
+    
+            var marker_284be807c0a061fca90bd1f02ebb1792 = L.marker(
+                [25.0265152, 121.534395],
+                {}
+            ).addTo(map_c4f3394eadbb29dcfb141c00b7e6a00c);
+        
+    
+            var icon_61f90e58fc15c348c919f0e494e5d038 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_284be807c0a061fca90bd1f02ebb1792.setIcon(icon_61f90e58fc15c348c919f0e494e5d038);
+        
+    
+        var popup_ed63a1bb6950369ae141f4a23cbb07ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a20499d3cf1fd2b7ab63d969fc8f0ca = $(`<div id="html_5a20499d3cf1fd2b7ab63d969fc8f0ca" style="width: 100.0%; height: 100.0%;">維修總部</div>`)[0];
+                popup_ed63a1bb6950369ae141f4a23cbb07ec.setContent(html_5a20499d3cf1fd2b7ab63d969fc8f0ca);
+            
+        
+
+        marker_284be807c0a061fca90bd1f02ebb1792.bindPopup(popup_ed63a1bb6950369ae141f4a23cbb07ec)
+        ;
+
+        
+    
+    
+            var marker_ff70308a383e40cc7ace0f10e9eb4648 = L.marker(
+                [25.01986, 121.5298],
+                {}
+            ).addTo(map_c4f3394eadbb29dcfb141c00b7e6a00c);
+        
+    
+            var icon_1c74a02a04ced0e4f0ea0d4886b64b40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ff70308a383e40cc7ace0f10e9eb4648.setIcon(icon_1c74a02a04ced0e4f0ea0d4886b64b40);
+        
+    
+        var popup_0a220164d7677777646965076c9e60a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea695f479f53584bd2c9c9780c8c6d6 = $(`<div id="html_1ea695f479f53584bd2c9c9780c8c6d6" style="width: 100.0%; height: 100.0%;">大安區2站 - 異常說明: AD-1: 消費異常</div>`)[0];
+                popup_0a220164d7677777646965076c9e60a3.setContent(html_1ea695f479f53584bd2c9c9780c8c6d6);
+            
+        
+
+        marker_ff70308a383e40cc7ace0f10e9eb4648.bindPopup(popup_0a220164d7677777646965076c9e60a3)
+        ;
+
+        
+    
+    
+            var poly_line_84625ee9d6b727e1731d9ca2bacd3ace = L.polyline(
+                [[25.026504, 121.534181], [25.026305, 121.534193], [25.026218, 121.534181], [25.026262, 121.533635], [25.02611, 121.533617], [25.026058, 121.534294], [25.025985, 121.534786], [25.025456, 121.534727], [25.025016, 121.534677], [25.024836, 121.534657], [25.024504, 121.534619], [25.024035, 121.534566], [25.022637, 121.534409], [25.022661, 121.533541], [25.022663, 121.533412], [25.022655, 121.533225], [25.022593, 121.532836], [25.022557, 121.532691], [25.022455, 121.532355], [25.022303, 121.532022], [25.022176, 121.531815], [25.021963, 121.531542], [25.021132, 121.53057], [25.020683, 121.530086], [25.019929, 121.529156], [25.019806, 121.529008], [25.019504, 121.529329], [25.019606, 121.529448], [25.019882, 121.529777]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c4f3394eadbb29dcfb141c00b7e6a00c);
+        
+</script>
+</html>
