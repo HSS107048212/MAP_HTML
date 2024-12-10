@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e0df3231e6e1a37899c64e1fd08e01c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e0df3231e6e1a37899c64e1fd08e01c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e0df3231e6e1a37899c64e1fd08e01c = L.map(
+                "map_6e0df3231e6e1a37899c64e1fd08e01c",
+                {
+                    center: [38.7247854, 116.1217307],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eea2b33332a88ce1d5b825f9977339d0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eea2b33332a88ce1d5b825f9977339d0.addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var marker_ac03149e4d2445a186196cf8b388456a = L.marker(
+                [38.7247854, 116.1217307],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_0cf38209f2e5a956ebb1fcbb3f629514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac03149e4d2445a186196cf8b388456a.setIcon(icon_0cf38209f2e5a956ebb1fcbb3f629514);
+        
+    
+        var popup_67d84051c7aa52a57894332c4da8ab82 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_083114a618ad4bc11c0bbde51a84e007 = $(`<div id="html_083114a618ad4bc11c0bbde51a84e007" style="width: 100.0%; height: 100.0%;">維修總部</div>`)[0];
+                popup_67d84051c7aa52a57894332c4da8ab82.setContent(html_083114a618ad4bc11c0bbde51a84e007);
+            
+        
+
+        marker_ac03149e4d2445a186196cf8b388456a.bindPopup(popup_67d84051c7aa52a57894332c4da8ab82)
+        ;
+
+        
+    
+    
+            var marker_621d308d8326d40a47731323d89527cd = L.marker(
+                [25.07805, 121.5295],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_63170e7ef212079e0ab9730ddb5b6851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_621d308d8326d40a47731323d89527cd.setIcon(icon_63170e7ef212079e0ab9730ddb5b6851);
+        
+    
+        var popup_d000486d04d9f6ce21b37c25715226c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1291ce23e65a03ce11588ba315c6b3b6 = $(`<div id="html_1291ce23e65a03ce11588ba315c6b3b6" style="width: 100.0%; height: 100.0%;">中山區2站 - 異常說明: DC-1: 前次充電度數異常</div>`)[0];
+                popup_d000486d04d9f6ce21b37c25715226c3.setContent(html_1291ce23e65a03ce11588ba315c6b3b6);
+            
+        
+
+        marker_621d308d8326d40a47731323d89527cd.bindPopup(popup_d000486d04d9f6ce21b37c25715226c3)
+        ;
+
+        
+    
+    
+            var marker_33f4902b10b0b54ee9949467651e7ed4 = L.marker(
+                [25.08524, 121.5375],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_799b3ab1c94e952808cb1c4ecad331a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33f4902b10b0b54ee9949467651e7ed4.setIcon(icon_799b3ab1c94e952808cb1c4ecad331a6);
+        
+    
+        var popup_6e169140f2728307a45c867f0233dffb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc35f408c9627bb0a599328d4805f4da = $(`<div id="html_fc35f408c9627bb0a599328d4805f4da" style="width: 100.0%; height: 100.0%;">中山區4站 - 異常說明: DC-1: 消費異常; DC-2: 前次充電度數異常</div>`)[0];
+                popup_6e169140f2728307a45c867f0233dffb.setContent(html_fc35f408c9627bb0a599328d4805f4da);
+            
+        
+
+        marker_33f4902b10b0b54ee9949467651e7ed4.bindPopup(popup_6e169140f2728307a45c867f0233dffb)
+        ;
+
+        
+    
+    
+            var marker_e5b8180f783ef8b3e7ff65ba556fb416 = L.marker(
+                [25.01894, 121.5336],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_428ee7c28e107b92f074812833018b58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5b8180f783ef8b3e7ff65ba556fb416.setIcon(icon_428ee7c28e107b92f074812833018b58);
+        
+    
+        var popup_5f7d9c0435ccedb0c5c4022e63b03b37 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_348cbb17309338cd4793f5b36fe58014 = $(`<div id="html_348cbb17309338cd4793f5b36fe58014" style="width: 100.0%; height: 100.0%;">大安區1站 - 異常說明: AC-1: 充電異常; DC-2: 前次充電度數異常</div>`)[0];
+                popup_5f7d9c0435ccedb0c5c4022e63b03b37.setContent(html_348cbb17309338cd4793f5b36fe58014);
+            
+        
+
+        marker_e5b8180f783ef8b3e7ff65ba556fb416.bindPopup(popup_5f7d9c0435ccedb0c5c4022e63b03b37)
+        ;
+
+        
+    
+    
+            var marker_1a3410998a1f6a02372e01e205601797 = L.marker(
+                [25.01986, 121.5298],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_e6c0952b634e6214a2527922cf088df2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a3410998a1f6a02372e01e205601797.setIcon(icon_e6c0952b634e6214a2527922cf088df2);
+        
+    
+        var popup_ddcd652c5b2790a3ee0e8cb5a9d0634f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6fae3d576cef5b0e8ac9fd6d8183922a = $(`<div id="html_6fae3d576cef5b0e8ac9fd6d8183922a" style="width: 100.0%; height: 100.0%;">大安區2站 - 異常說明: AC-1: 消費異常</div>`)[0];
+                popup_ddcd652c5b2790a3ee0e8cb5a9d0634f.setContent(html_6fae3d576cef5b0e8ac9fd6d8183922a);
+            
+        
+
+        marker_1a3410998a1f6a02372e01e205601797.bindPopup(popup_ddcd652c5b2790a3ee0e8cb5a9d0634f)
+        ;
+
+        
+    
+    
+            var marker_7b71c8b4a7a981a866c5f4c2cbe223a9 = L.marker(
+                [25.02543, 121.5433],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_0cccba1ef6f17f3dc29dbfc3280a349c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b71c8b4a7a981a866c5f4c2cbe223a9.setIcon(icon_0cccba1ef6f17f3dc29dbfc3280a349c);
+        
+    
+        var popup_484b182e0acbe5235771bf01cc9d19ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc0bb729fb6b671352fd4ff8b898994f = $(`<div id="html_dc0bb729fb6b671352fd4ff8b898994f" style="width: 100.0%; height: 100.0%;">大安區3站 - 異常說明: DC-1: 緊急停機</div>`)[0];
+                popup_484b182e0acbe5235771bf01cc9d19ae.setContent(html_dc0bb729fb6b671352fd4ff8b898994f);
+            
+        
+
+        marker_7b71c8b4a7a981a866c5f4c2cbe223a9.bindPopup(popup_484b182e0acbe5235771bf01cc9d19ae)
+        ;
+
+        
+    
+    
+            var marker_17e8658edd52b340f200765c5b606f63 = L.marker(
+                [25.01295, 121.5397],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_a0a66005deb1c0654714b1dce576b959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17e8658edd52b340f200765c5b606f63.setIcon(icon_a0a66005deb1c0654714b1dce576b959);
+        
+    
+        var popup_110da33f3d44422983e9d39ec581f7cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9ba9aeae1f94021613a6d0e0b77a894 = $(`<div id="html_b9ba9aeae1f94021613a6d0e0b77a894" style="width: 100.0%; height: 100.0%;">大安區4站 - 異常說明: AC-1: 前次充電度數異常</div>`)[0];
+                popup_110da33f3d44422983e9d39ec581f7cc.setContent(html_b9ba9aeae1f94021613a6d0e0b77a894);
+            
+        
+
+        marker_17e8658edd52b340f200765c5b606f63.bindPopup(popup_110da33f3d44422983e9d39ec581f7cc)
+        ;
+
+        
+    
+    
+            var marker_c00748b5d29859979df03252f53f3430 = L.marker(
+                [25.01137, 121.5406],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_88eb30ebb0ba1c1807e248ac9e376a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c00748b5d29859979df03252f53f3430.setIcon(icon_88eb30ebb0ba1c1807e248ac9e376a86);
+        
+    
+        var popup_4deff8241a74e1347be3c7b6e6bb0321 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f294d48273a16c4dd7b65942bd2b68c = $(`<div id="html_3f294d48273a16c4dd7b65942bd2b68c" style="width: 100.0%; height: 100.0%;">大安區5站 - 異常說明: DC-1: 充電異常; 前次充電度數異常</div>`)[0];
+                popup_4deff8241a74e1347be3c7b6e6bb0321.setContent(html_3f294d48273a16c4dd7b65942bd2b68c);
+            
+        
+
+        marker_c00748b5d29859979df03252f53f3430.bindPopup(popup_4deff8241a74e1347be3c7b6e6bb0321)
+        ;
+
+        
+    
+    
+            var marker_a9160660ab2b4d77605d53e5efc703ba = L.marker(
+                [25.00402, 121.5407],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_52a9ffd55be9021ae11eedddb59bc09a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9160660ab2b4d77605d53e5efc703ba.setIcon(icon_52a9ffd55be9021ae11eedddb59bc09a);
+        
+    
+        var popup_cdcb9fc61e782c3f70ae9a3af2ca9caf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee9c60a7ec96682182b49db620f313a9 = $(`<div id="html_ee9c60a7ec96682182b49db620f313a9" style="width: 100.0%; height: 100.0%;">文山區1站 - 異常說明: AC-1: 距離前次使用天數異常; 前次充電度數異常</div>`)[0];
+                popup_cdcb9fc61e782c3f70ae9a3af2ca9caf.setContent(html_ee9c60a7ec96682182b49db620f313a9);
+            
+        
+
+        marker_a9160660ab2b4d77605d53e5efc703ba.bindPopup(popup_cdcb9fc61e782c3f70ae9a3af2ca9caf)
+        ;
+
+        
+    
+    
+            var marker_cedb9a8d5249e8101ed677ffd520e647 = L.marker(
+                [25.0027, 121.5386],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_6b4791776ea54e31021dcc51b784e2f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cedb9a8d5249e8101ed677ffd520e647.setIcon(icon_6b4791776ea54e31021dcc51b784e2f6);
+        
+    
+        var popup_69d9e9a2cc4115eb5716f8bbd9eb957e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4af050109e7a2da268ec1a8c9e61b2cc = $(`<div id="html_4af050109e7a2da268ec1a8c9e61b2cc" style="width: 100.0%; height: 100.0%;">文山區2站 - 異常說明: DC-1: 前次充電度數異常</div>`)[0];
+                popup_69d9e9a2cc4115eb5716f8bbd9eb957e.setContent(html_4af050109e7a2da268ec1a8c9e61b2cc);
+            
+        
+
+        marker_cedb9a8d5249e8101ed677ffd520e647.bindPopup(popup_69d9e9a2cc4115eb5716f8bbd9eb957e)
+        ;
+
+        
+    
+    
+            var marker_7a88069afeec5b0085bbefa91ac191a2 = L.marker(
+                [25.00115, 121.5392],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_4ecebb4d52dcce18755266e289e17f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a88069afeec5b0085bbefa91ac191a2.setIcon(icon_4ecebb4d52dcce18755266e289e17f96);
+        
+    
+        var popup_10c7a40526fbf1723e2f1328854579e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_939a6f9624f71bb4b0a68a4934cf3ec8 = $(`<div id="html_939a6f9624f71bb4b0a68a4934cf3ec8" style="width: 100.0%; height: 100.0%;">文山區3站 - 異常說明: AC-1: 緊急停機; 距離前次使用天數異常; AC-2: 距離前次使用天數異常; DC-1: 距離前次使用天數異常; DC-2: 充電異常; 距離前次使用天數異常; 前次充電度數異常</div>`)[0];
+                popup_10c7a40526fbf1723e2f1328854579e8.setContent(html_939a6f9624f71bb4b0a68a4934cf3ec8);
+            
+        
+
+        marker_7a88069afeec5b0085bbefa91ac191a2.bindPopup(popup_10c7a40526fbf1723e2f1328854579e8)
+        ;
+
+        
+    
+    
+            var marker_0513f128d30e682d142f1b5b9b5385b3 = L.marker(
+                [25.00154, 121.5364],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_750a89e0dd31454fe52cef3897edf044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0513f128d30e682d142f1b5b9b5385b3.setIcon(icon_750a89e0dd31454fe52cef3897edf044);
+        
+    
+        var popup_07939802621449f602e7c79b354bea77 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29d63ed536d09472ed1408b487d47c7d = $(`<div id="html_29d63ed536d09472ed1408b487d47c7d" style="width: 100.0%; height: 100.0%;">文山區4站 - 異常說明: DC-1: 前次充電度數異常</div>`)[0];
+                popup_07939802621449f602e7c79b354bea77.setContent(html_29d63ed536d09472ed1408b487d47c7d);
+            
+        
+
+        marker_0513f128d30e682d142f1b5b9b5385b3.bindPopup(popup_07939802621449f602e7c79b354bea77)
+        ;
+
+        
+    
+    
+            var marker_949f4184f0dd87f56559e7f668d41dcf = L.marker(
+                [25.00144, 121.5398],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_c7d6fbe0a6235460a88bc02850df63f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_949f4184f0dd87f56559e7f668d41dcf.setIcon(icon_c7d6fbe0a6235460a88bc02850df63f3);
+        
+    
+        var popup_b12678bfb08c3bc22f50ef72e63fe314 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6edbc7f0e661f996bc07f040cf11e2b3 = $(`<div id="html_6edbc7f0e661f996bc07f040cf11e2b3" style="width: 100.0%; height: 100.0%;">文山區5站 - 異常說明: AC-1: 消費異常</div>`)[0];
+                popup_b12678bfb08c3bc22f50ef72e63fe314.setContent(html_6edbc7f0e661f996bc07f040cf11e2b3);
+            
+        
+
+        marker_949f4184f0dd87f56559e7f668d41dcf.bindPopup(popup_b12678bfb08c3bc22f50ef72e63fe314)
+        ;
+
+        
+    
+    
+            var marker_78c43a0baee20446cb461b83f32c5e5d = L.marker(
+                [25.04987, 121.5779],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_f5fb54b7b1eaa1b3bbf56222e20fc785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78c43a0baee20446cb461b83f32c5e5d.setIcon(icon_f5fb54b7b1eaa1b3bbf56222e20fc785);
+        
+    
+        var popup_aee17ed7689028877d12cfb841a29d99 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a0efe2f704ae10470b9b08fb5fed76ce = $(`<div id="html_a0efe2f704ae10470b9b08fb5fed76ce" style="width: 100.0%; height: 100.0%;">松山區1站 - 異常說明: AC-1: 電路異常</div>`)[0];
+                popup_aee17ed7689028877d12cfb841a29d99.setContent(html_a0efe2f704ae10470b9b08fb5fed76ce);
+            
+        
+
+        marker_78c43a0baee20446cb461b83f32c5e5d.bindPopup(popup_aee17ed7689028877d12cfb841a29d99)
+        ;
+
+        
+    
+    
+            var marker_a3baf50fbac71dae431083acd3f1efc0 = L.marker(
+                [25.04878, 121.5609],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_5ae2a3c434b6bb4be754d5e97ac98aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3baf50fbac71dae431083acd3f1efc0.setIcon(icon_5ae2a3c434b6bb4be754d5e97ac98aa5);
+        
+    
+        var popup_68c3e96b598734dbd05f95ece2fad2b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80d9379b09d8f686d3fd9192c72d46b0 = $(`<div id="html_80d9379b09d8f686d3fd9192c72d46b0" style="width: 100.0%; height: 100.0%;">松山區4站 - 異常說明: DC-1: 充電異常</div>`)[0];
+                popup_68c3e96b598734dbd05f95ece2fad2b0.setContent(html_80d9379b09d8f686d3fd9192c72d46b0);
+            
+        
+
+        marker_a3baf50fbac71dae431083acd3f1efc0.bindPopup(popup_68c3e96b598734dbd05f95ece2fad2b0)
+        ;
+
+        
+    
+    
+            var marker_12fb5da7cd51849ae1554bfcdd09d612 = L.marker(
+                [25.07805, 121.5295],
+                {}
+            ).addTo(map_6e0df3231e6e1a37899c64e1fd08e01c);
+        
+    
+            var icon_3b88dbdae1bd4149df82cb6d8e6851ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_12fb5da7cd51849ae1554bfcdd09d612.setIcon(icon_3b88dbdae1bd4149df82cb6d8e6851ec);
+        
+    
+        var popup_905ae2db31d4bbb7d14cff3f706802d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9b65522ed2775a7a2b3fe5df7aff702 = $(`<div id="html_d9b65522ed2775a7a2b3fe5df7aff702" style="width: 100.0%; height: 100.0%;">中山區2站 - 異常說明: DC-1: 前次充電度數異常</div>`)[0];
+                popup_905ae2db31d4bbb7d14cff3f706802d2.setContent(html_d9b65522ed2775a7a2b3fe5df7aff702);
+            
+        
+
+        marker_12fb5da7cd51849ae1554bfcdd09d612.bindPopup(popup_905ae2db31d4bbb7d14cff3f706802d2)
+        ;
+
+        
+    
+</script>
+</html>
