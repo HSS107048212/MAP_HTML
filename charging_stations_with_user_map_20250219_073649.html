@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce0287df182983830d06a3ddf67d0da6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce0287df182983830d06a3ddf67d0da6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce0287df182983830d06a3ddf67d0da6 = L.map(
+                "map_ce0287df182983830d06a3ddf67d0da6",
+                {
+                    center: [25.0462432, 121.5174745],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1cd9fa2d6d933742d8cae853c0f28f72 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1cd9fa2d6d933742d8cae853c0f28f72.addTo(map_ce0287df182983830d06a3ddf67d0da6);
+        
+    
+            var marker_741114490adb5f73c08ca1b22dad9b6c = L.marker(
+                [25.0462432, 121.5174745],
+                {
+}
+            ).addTo(map_ce0287df182983830d06a3ddf67d0da6);
+        
+    
+            var icon_66612c06a9890191cbcd0559de06505d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_741114490adb5f73c08ca1b22dad9b6c.setIcon(icon_66612c06a9890191cbcd0559de06505d);
+        
+    
+        var popup_0e87d6290fc30c65d2255c85532ef534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_887ee36f9998eaac8e77db94d2a5f35c = $(`<div id="html_887ee36f9998eaac8e77db94d2a5f35c" style="width: 100.0%; height: 100.0%;">維修總部</div>`)[0];
+                popup_0e87d6290fc30c65d2255c85532ef534.setContent(html_887ee36f9998eaac8e77db94d2a5f35c);
+            
+        
+
+        marker_741114490adb5f73c08ca1b22dad9b6c.bindPopup(popup_0e87d6290fc30c65d2255c85532ef534)
+        ;
+
+        
+    
+    
+            var marker_67b366d5748565059d1128031f286a3c = L.marker(
+                [25.045, 121.5197],
+                {
+}
+            ).addTo(map_ce0287df182983830d06a3ddf67d0da6);
+        
+    
+            var icon_6591527274f6288eb28a93958122d24c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_67b366d5748565059d1128031f286a3c.setIcon(icon_6591527274f6288eb28a93958122d24c);
+        
+    
+        var popup_3e2a98864f6a8545c69058521895b4f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a895ce1277746abf57ddc4e98cdf6f8 = $(`<div id="html_2a895ce1277746abf57ddc4e98cdf6f8" style="width: 100.0%; height: 100.0%;">中山青島路口 - 維修編碼: 1.0</div>`)[0];
+                popup_3e2a98864f6a8545c69058521895b4f4.setContent(html_2a895ce1277746abf57ddc4e98cdf6f8);
+            
+        
+
+        marker_67b366d5748565059d1128031f286a3c.bindPopup(popup_3e2a98864f6a8545c69058521895b4f4)
+        ;
+
+        
+    
+    
+            var poly_line_48fd3fa29b5c6c612c37340f57df9d9e = L.polyline(
+                [[25.046279, 121.517485], [25.046889, 121.515021], [25.047008, 121.514548], [25.047316, 121.513297], [25.047322, 121.513275], [25.047186, 121.513271], [25.047095, 121.513649], [25.046955, 121.51422], [25.046759, 121.515017], [25.046486, 121.516125], [25.046148, 121.517468], [25.046147, 121.517479], [25.045681, 121.519122], [25.045579, 121.519229], [25.045472, 121.519297], [25.045343, 121.519336], [25.045228, 121.519336], [25.04496, 121.519261], [25.044546, 121.519147], [25.044532, 121.519228], [25.044517, 121.519296], [25.044492, 121.519399], [25.045034, 121.519557]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ce0287df182983830d06a3ddf67d0da6);
+        
+</script>
+</html>
