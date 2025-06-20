@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87a2342ebc3806e7db984b7d2726afc0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87a2342ebc3806e7db984b7d2726afc0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87a2342ebc3806e7db984b7d2726afc0 = L.map(
+                "map_87a2342ebc3806e7db984b7d2726afc0",
+                {
+                    center: [25.0372759, 121.4998814],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f243ecfbb00067df7a114702f6eddb89 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f243ecfbb00067df7a114702f6eddb89.addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var marker_3709bbcee927b5a7d758f3268806f61d = L.marker(
+                [25.0372759, 121.4998814],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_8e6d92b9de1abce70295bf37f12b2f7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3709bbcee927b5a7d758f3268806f61d.bindTooltip(
+                `<div>
+                     起點
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3709bbcee927b5a7d758f3268806f61d.setIcon(icon_8e6d92b9de1abce70295bf37f12b2f7b);
+            
+    
+            var poly_line_57ab44361662b4e67cc20634277fb913 = L.polyline(
+                [[25.0372759, 121.4998814], [25.01986, 121.5298], [25.02543, 121.5433], [25.01894, 121.5336], [25.01894, 121.5336], [25.01894, 121.5336], [25.0372759, 121.4998814]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            poly_line_57ab44361662b4e67cc20634277fb913.bindTooltip(
+                `<div>
+                     Greedy-Insert
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b272972429c79ed086916bfde0163b69 = L.marker(
+                [25.01986, 121.5298],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_e4e473d37bbd95ea4e52e06625e3df27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b272972429c79ed086916bfde0163b69.bindTooltip(
+                `<div>
+                     大安區2站_AC-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b272972429c79ed086916bfde0163b69.setIcon(icon_e4e473d37bbd95ea4e52e06625e3df27);
+            
+    
+            var marker_acfd9c976487620a8419becfb13fd132 = L.marker(
+                [25.01894, 121.5336],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_1de5dff3f5159e2e98d3f438361a2a07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_acfd9c976487620a8419becfb13fd132.bindTooltip(
+                `<div>
+                     大安區1站_AC-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acfd9c976487620a8419becfb13fd132.setIcon(icon_1de5dff3f5159e2e98d3f438361a2a07);
+            
+    
+            var marker_58858c4bb69a8e5d491fa7047e54712e = L.marker(
+                [25.01894, 121.5336],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_2a213cae841577dfa5e70366a97abd79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_58858c4bb69a8e5d491fa7047e54712e.bindTooltip(
+                `<div>
+                     大安區1站_DC-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58858c4bb69a8e5d491fa7047e54712e.setIcon(icon_2a213cae841577dfa5e70366a97abd79);
+            
+    
+            var marker_dbd8a9450c5239e19e61387a21c2e97f = L.marker(
+                [25.01894, 121.5336],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_ae784567e11d34444152dff57991d0f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dbd8a9450c5239e19e61387a21c2e97f.bindTooltip(
+                `<div>
+                     大安區1站_DC-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dbd8a9450c5239e19e61387a21c2e97f.setIcon(icon_ae784567e11d34444152dff57991d0f3);
+            
+    
+            var marker_9b5bf40afd8bcf1413e101e8e99ce7e7 = L.marker(
+                [25.02543, 121.5433],
+                {
+}
+            ).addTo(map_87a2342ebc3806e7db984b7d2726afc0);
+        
+    
+            var icon_bc27d24daf8d4cb13caf16865defc3f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9b5bf40afd8bcf1413e101e8e99ce7e7.bindTooltip(
+                `<div>
+                     大安區3站_DC-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b5bf40afd8bcf1413e101e8e99ce7e7.setIcon(icon_bc27d24daf8d4cb13caf16865defc3f4);
+            
+</script>
+</html>
